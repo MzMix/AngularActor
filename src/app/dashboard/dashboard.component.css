@@ -1,0 +1,12 @@
+.compon
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    justify-content: center;
+}
+app-actor-panel
+{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}

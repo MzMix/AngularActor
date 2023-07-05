@@ -1,5 +1,8 @@
+
 <h2>Najlepsi:</h2>
 
+<div class="compon">
 <ng-container *ngFor="let actor of actors$ | async">
     <app-actor-panel [actor]="actor"></app-actor-panel>
 </ng-container>
+</div>

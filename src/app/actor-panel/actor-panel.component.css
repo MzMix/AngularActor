@@ -3,9 +3,11 @@
     width: 300px;
     height: 300px;
     border: 1px solid black;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: aliceblue;
 }
 img
 {
@@ -19,14 +21,20 @@ img
 }
 button
 {
-    border: 1px solid black;
+    border: 0 ;
     border-radius: 10px;
-    width: 150px;
+    width: 170px;
     height: 40px;
     background-color: transparent;
     font-size: 17px;
+    background-color: rgb(201, 201, 201);
 }
 .stars
 {
   display: flex;
+}
+p
+{
+    font-size: 25px;
+    margin: 5px;
 }

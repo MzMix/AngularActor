@@ -2,25 +2,32 @@
 {
     display: flex;
     justify-content: center;
-    width: 400px;
+    width: 500px;
     height: 40px;
     border: 1px solid black;
     border-radius: 5px ;
     align-items: center;
     margin-bottom: 10px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.418);
+    background-color: aliceblue;
 }
 .name
 {
     margin-left: 10px;
     margin-right: 10px;
+    width: 150px;
 }
 .zobaczWiecej ,.usun
 {
     background-color: transparent;
-    border: 1px solid black;
+    border: 0;
     margin-right: 10px;
-    width: 100px;
+    width: 150px;
     height: 30px;
     border-radius: 5px;
+    background-color: rgba(154, 231, 255, 0.788);
+}
+.usun{
+
+    background-color: rgb(135, 197, 255);
 }
