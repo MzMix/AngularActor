@@ -1,5 +1,10 @@
-<h2>Wszyscy:</h2>
+<div id="wrapper">
+    <h2>Wszyscy aktorzy:</h2>
 
-<ng-container *ngFor="let actor of actors$ | async">
-    <app-actors-list [actor]="actor"></app-actors-list>
-</ng-container>
+    <div id="listWrapper">
+        <ng-container *ngFor="let actor of actors$ | async">
+            <app-actors-list [actor]="actor"></app-actors-list>
+        </ng-container>
+    </div>
+
+</div>

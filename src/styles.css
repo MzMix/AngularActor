@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,10 +10,10 @@ body {
 
   --font-color-dark: #282c34;
   --font-color-light: #efefef;
-  --lightg-background: #efefef;
+  --light-background: #efefef;
   --dark-background: #282c34;
 
-    --background-panel: #fbfcfe;
+  --background-panel: #fbfcfe;
 
-  background-color: var(--lightg-background);
+  background-color: var(--light-background);
 }

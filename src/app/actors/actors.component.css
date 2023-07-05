@@ -1,0 +1,16 @@
+#wrapper{
+    width: 100vw;
+    
+}
+
+#listWrapper{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    margin: 0.4em
+}
