@@ -1,13 +1,21 @@
-#detailsWrapper {
+#detailsWrapper, #inputWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+input {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
 img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 20em;
+    max-height: 20em;
     border-radius: 1em;
     margin: 2em;
     box-shadow: 0 1px 5px var(--font-color-dark);

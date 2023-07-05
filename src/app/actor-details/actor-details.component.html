@@ -5,6 +5,16 @@
 
   <app-star-panel [rating]="actor.rating"></app-star-panel>
 
+  <div id="inputWrapper">
+    <label for="new-actor-name">Imię i nazwisko</label>
+    <input for="new-actor-name" [(ngModel)]="actor.name" />
+  
+    <label for="new-actor-url">Link do zdjęcia</label>
+    <input for="new-actor-url" [(ngModel)]="actor.imgUrl" />
+  
+    <label for="new-actor-rating">Ocena 0-5</label>
+    <input for="new-actor-rating" [(ngModel)]="actor.rating" />
+
   <div>
     <button type="button" (click)="goBack()">Powrót</button>
     <button type="button" (click)="save()">Zapisz</button>

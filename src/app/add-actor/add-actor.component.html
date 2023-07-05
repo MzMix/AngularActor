@@ -1,14 +1,22 @@
-<p>Imię</p>
-<input type="text" class="name" placeholder="Imię">
-<p>Nazwisko</p>
-<input type="text" class="surname" placeholder="Nazwisko">
-<p>Ocena</p>
-<div class="stars">
-    <app-star></app-star>
-    <app-star></app-star>
-    <app-star></app-star>
-    <app-star></app-star>
-    <app-star></app-star>
+<div>
+  <label for="new-actor-name">Imię i nazwisko</label>
+  <input for="new-actor-name" #actorName />
 
+  <label for="new-actor-url">Link do zdjęcia</label>
+  <input for="new-actor-url" #actorUrl />
+
+  <label for="new-actor-rating">Ocena 0-5</label>
+  <input for="new-actor-rating" #actorRating />
+
+  <button
+    type="button"
+    class="add-button"
+    (click)="
+      add(actorName.value, actorUrl.value, actorRating.value);
+      actorName.value = '';
+      actorUrl.value = ''
+    "
+  >
+    Dodaj aktora
+  </button>
 </div>
-<button>Dodaj Aktora</button>
