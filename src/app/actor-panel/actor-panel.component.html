@@ -1,0 +1,13 @@
+<div class="panel">
+
+<img [src]="actor.imgUrl">
+
+<p>{{actor.name}}</p>
+
+<div class="stars">
+    <app-star-panel [rating]="actor.rating"></app-star-panel>
+</div>
+
+<a routerLink="/detail/{{actor.id}}">Zobacz więcej</a>
+
+</div>

@@ -1,0 +1,20 @@
+<div id="wrapper">
+  <h2>Wszyscy aktorzy:</h2>
+
+  <div id="listWrapper">
+    <ng-container *ngFor="let actor of actors">
+      <div class="actorListElement">
+        <p class="name">
+          {{ actor.name }}
+        </p>
+        <app-star-panel [rating]="actor.rating"></app-star-panel>
+
+        <a class="zobaczWiecej" routerLink="/detail/{{ actor.id }}"
+          >Zobacz więcej</a>
+        <button type="button" class="deleteBtn" (click)="delete(actor)">
+          Usuń
+        </button>
+      </div>
+    </ng-container>
+  </div>
+</div>

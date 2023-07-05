@@ -1,0 +1,11 @@
+<h2>Najlepsi aktorzy - TOP 6:</h2>
+
+<div id="panelsWrapper">
+  <ng-container *ngFor="let actor of actors">
+    <app-actor-panel [actor]="actor"></app-actor-panel>
+  </ng-container>
+</div>
+
+<div id="searchPanel">
+  <app-search-panel></app-search-panel>
+</div>

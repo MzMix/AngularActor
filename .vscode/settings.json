@@ -1,0 +1,8 @@
+{
+    "conventionalCommits.scopes": [
+        "Backend",
+        "General Integration",
+        "General",
+        "Frontend"
+    ]
+}
