@@ -42,7 +42,7 @@ export class ActorService {
 
   getAllActors(): Observable<Actor[]> {
     return this.http.get<Actor[]>(this.baseUrl).pipe(
-      tap((_) => this.log('fetched acors')),
+      tap((_) => this.log('fetched actors')),
       catchError(this.handleError<Actor[]>('getActors', []))
     );
   }
@@ -84,7 +84,7 @@ export class ActorService {
   searchActors(term: string): Observable<Actor[]> {
     if (!term.trim()) return of([]);
 
-    return this.http.get<Actor[]>(`${this.baseUrl}/?name=${term}`).pipe(
+    return this.http.get<Actor[]>(`${this.baseUrl}/?firstName=${term}`).pipe(
       tap((x) =>
         x.length
           ? this.log(`found actors matching "${term}"`)

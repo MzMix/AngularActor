@@ -1,3 +1,10 @@
-<p>Search actors</p>
+<div id="search-component">
+  <label for="search-box">Szukaj aktorów:</label>
+  <input #searchBox id="search-box" (input)="search(searchBox.value)">
 
-<input type="text" placeholder="Search Actors">
+  <ul class="search-result">
+      <li *ngFor="let actor of actors$ | async">
+          <a routerLink="/detail/{{actor.id}}">{{actor.firstName}} {{actor.lastName}}</a>
+      </li>
+  </ul>
+</div>

@@ -9,7 +9,7 @@ import { InMemoryDataService } from './services/in-memory-data.service';
 import { AppComponent } from './app.component';
 import { ActorPanelComponent } from './actor-panel/actor-panel.component';
 import { SearchPanelComponent } from './search-panel/search-panel.component';
-import { Messages1Component } from './messages1/messages1.component';
+import { MessagesComponent } from './messages/messages.component';
 import { ActorsListComponent } from './actors-list/actors-list.component';
 import { AddActorComponent } from './add-actor/add-actor.component';
 import { StarComponent } from './star/star.component';
@@ -23,7 +23,7 @@ import { ActorDetailsComponent } from './actor-details/actor-details.component';
     AppComponent,
     ActorPanelComponent,
     SearchPanelComponent,
-    Messages1Component,
+    MessagesComponent,
     ActorsListComponent,
     AddActorComponent,
     StarComponent,

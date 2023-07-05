@@ -1,12 +1,28 @@
-.compon
-{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 80vw;
-    justify-content: center;
+h2{
+    margin: 1em;
+    text-decoration: underline;
+    text-align: center;
 }
-app-actor-panel
-{
-    margin-right: 15px;
-    margin-bottom: 15px;
+
+#searchPanel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+app-search-panel{
+    width: 100%;
+}
+
+#panelsWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }

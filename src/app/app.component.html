@@ -1,17 +1,18 @@
+<nav>
+  <div id="titleBar">
+    <h1>Angular Actor App</h1>
+  </div>
+
+  <div id="navBtns">
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/actors">Actors</a>
+    <a routerLink="/new">Add New</a>
+  </div>
+</nav>
+
 <main>
-  <nav>
-    <div class="titleBar"><h1>Title Bar</h1></div>
-
-    <div class="buttonsToAction">
-      <a routerLink="/dashboard"><button class="dashboard">Dashboard</button></a>
-      <a routerLink="/actors"><button class="actors">Actors</button></a>
-      <a routerLink="/new"><button class="addNew">Add New</button></a>
-    </div>
-  </nav>
-
-  <router-outlet></router-outlet>
-
-  <div class="messagesComp">
-    <app-messages1></app-messages1>
+  <div id="contentWrapper">
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
   </div>
 </main>

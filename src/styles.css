@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+
+  --font-color-dark: #282c34;
+  --font-color-light: #efefef;
+  --lightg-background: #efefef;
+  --dark-background: #282c34;
+
+    --background-panel: #fbfcfe;
+
+  background-color: var(--lightg-background);
+}

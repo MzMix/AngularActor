@@ -1,0 +1,36 @@
+#componentWrapper{
+    min-height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#componentWrapper,
+#messageWrapper {
+  width: 100%;
+}
+
+h2{
+    margin: 0.4em;
+}
+
+button {
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--font-color-dark);
+
+  margin: 0.2em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border-bottom: 1px solid var(--font-color-dark);
+
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background-color: var(--dark-background);
+  color: var(--font-color-light);
+  border-bottom: 1px solid var(--font-color-light);
+  text-decoration: underline;
+}
