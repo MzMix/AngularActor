@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "Backend",
         "General Integration",
-        "General"
+        "General",
+        "Frontend"
     ]
 }
