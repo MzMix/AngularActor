@@ -13,6 +13,9 @@ import { Messages1Component } from './messages1/messages1.component';
 import { ActorsListComponent } from './actors-list/actors-list.component';
 import { AddActorComponent } from './add-actor/add-actor.component';
 import { StarComponent } from './star/star.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ActorsComponent } from './actors/actors.component';
+import { NewActorComponent } from './new-actor/new-actor.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { StarComponent } from './star/star.component';
     Messages1Component,
     ActorsListComponent,
     AddActorComponent,
-    StarComponent
+    StarComponent,
+    DashboardComponent,
+    ActorsComponent,
+    NewActorComponent
   ],
   imports: [
     BrowserModule,

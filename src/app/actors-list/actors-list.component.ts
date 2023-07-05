@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Actor } from 'src/interfaces/actor.interface';
 
 @Component({
   selector: 'app-actors-list',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./actors-list.component.css']
 })
 export class ActorsListComponent {
-
+  @Input() actor! : Actor;
 }

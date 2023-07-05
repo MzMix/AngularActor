@@ -1,53 +1,21 @@
 <main>
-  <div class="titleBar"><h1>Title Bar</h1></div>
-  <div id="dashboard">
-  <div class="buttonsToAction">
-   <a href="#dashboard"><button class="dashboard">Dashboard</button></a>
-    <a href="#actors"><button class="actors">Actors</button></a>
-    <a href="addNew"><button class="addNew">Add New</button></a>
-  </div>
+  <nav>
+    <div class="titleBar"><h1>Title Bar</h1></div>
 
-  <h2>Top actors:</h2>
-  <div class="containerComp">
-    <div class="components">
-
-      <app-actor-panel></app-actor-panel>
-      <app-actor-panel></app-actor-panel>
-      <app-actor-panel></app-actor-panel>
-      <app-actor-panel></app-actor-panel>
-      <app-actor-panel></app-actor-panel>
-      <app-actor-panel></app-actor-panel>
-
+    <div class="buttonsToAction">
+      <a routerLink="/dashboard"><button class="dashboard">Dashboard</button></a>
+      <a routerLink="/actors"><button class="actors">Actors</button></a>
+      <a routerLink="/new"><button class="addNew">Add New</button></a>
     </div>
+  </nav>
 
-  </div>
+  <router-outlet></router-outlet>
 
   <div class="searchComp">
     <app-search-panel></app-search-panel>
   </div>
-  </div>
 
   <div class="messagesComp">
     <app-messages1></app-messages1>
-  </div>
-
-  <div id="actors">
-    <div class="actorsComp">
-      <app-actors-list></app-actors-list>
-      <app-actors-list></app-actors-list>
-      <app-actors-list></app-actors-list>
-
-    </div>
-    <div class="messagesComp">
-      <app-messages1></app-messages1>
-    </div>
-  </div>
-  <div id="addNew">
-    <div class="addActor">
-      <app-add-actor></app-add-actor>
-    </div>
-    <div class="messagesComp">
-      <app-messages1></app-messages1>
-    </div>
   </div>
 </main>

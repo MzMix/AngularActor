@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Actor } from 'src/interfaces/actor.interface';
 
 @Component({
   selector: 'app-actor-panel',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./actor-panel.component.css']
 })
 export class ActorPanelComponent {
-
+  @Input() actor! : Actor;
 }

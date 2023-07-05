@@ -1,6 +1,9 @@
 <div class="actor">
-<img src="">
-<p>Imie nazwisko</p>
+
+<img [src]="actor.imgUrl">
+
+<p>{{actor.firstName}} {{actor.lastName}}</p>
+
 <div class="stars">
     <app-star></app-star>
     <app-star></app-star>
@@ -8,5 +11,7 @@
     <app-star></app-star>
     <app-star></app-star>
 </div>
-<button class="zobaczW">Zobacz więcej</button>
+
+<!-- TODO: router link -->
+<button class="zobaczW" type="button">Zobacz więcej -> {{actor.id}}</button>
 </div>

@@ -1,0 +1,5 @@
+<h2>Wszyscy:</h2>
+
+<ng-container *ngFor="let actor of actors$ | async">
+    <app-actors-list [actor]="actor"></app-actors-list>
+</ng-container>
