@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { ActorPanelComponent } from './actor-panel/actor-panel.component';
 import { SearchPanelComponent } from './search-panel/search-panel.component';
 import { MessagesComponent } from './messages/messages.component';
-import { ActorsListComponent } from './actors-list/actors-list.component';
 import { AddActorComponent } from './add-actor/add-actor.component';
 import { StarComponent } from './star/star.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -24,7 +23,6 @@ import { ActorDetailsComponent } from './actor-details/actor-details.component';
     ActorPanelComponent,
     SearchPanelComponent,
     MessagesComponent,
-    ActorsListComponent,
     AddActorComponent,
     StarComponent,
     DashboardComponent,

@@ -9,7 +9,7 @@ import { Observable } from 'rxjs'
   styleUrls: ['./actors.component.css']
 })
 export class ActorsComponent implements OnInit {
-  actors$!: Observable<Actor[]>;
+  actors: Actor[] = [];
 
   constructor(private actorServics: ActorService){}
 
@@ -18,7 +18,13 @@ export class ActorsComponent implements OnInit {
   }
 
   getActors(): void{
-    this.actors$ =  this.actorServics.getAllActors();
+    this.actorServics.getAllActors().subscribe((actors) => (this.actors = actors));
+  }
+
+  delete(actor: Actor): void {
+    this.actors = this.actors.filter((a) => a !== actor);
+
+    this.actorServics.deleteActor(actor.id).subscribe();
   }
 
 }

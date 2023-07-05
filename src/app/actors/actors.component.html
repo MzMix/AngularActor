@@ -2,8 +2,12 @@
     <h2>Wszyscy aktorzy:</h2>
 
     <div id="listWrapper">
-        <ng-container *ngFor="let actor of actors$ | async">
-            <app-actors-list [actor]="actor"></app-actors-list>
+        <ng-container *ngFor="let actor of actors">
+            <div class="actorListElement">
+                <p class="name">{{actor.name}}</p>
+                <a class="zobaczWiecej" routerLink="/detail/{{actor.id}}">Zobacz więcej</a>
+                <button type="button" class="deleteBtn" (click)="delete(actor)">Usuń</button>
+            </div>
         </ng-container>
     </div>
 
