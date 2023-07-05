@@ -3,17 +3,15 @@
     <div class="titleBar"><h1>Title Bar</h1></div>
 
     <div class="buttonsToAction">
-      <a routerLink="/dashboard"><button class="dashboard">Dashboard</button></a>
+      <a routerLink="/dashboard"
+        ><button class="dashboard">Dashboard</button></a
+      >
       <a routerLink="/actors"><button class="actors">Actors</button></a>
       <a routerLink="/new"><button class="addNew">Add New</button></a>
     </div>
   </nav>
 
   <router-outlet></router-outlet>
-
-  <div class="searchComp">
-    <app-search-panel></app-search-panel>
-  </div>
 
   <div class="messagesComp">
     <app-messages1></app-messages1>

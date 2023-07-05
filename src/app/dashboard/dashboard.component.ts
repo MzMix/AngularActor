@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Actor } from 'src/interfaces/actor.interface';
 import { ActorService } from '../services/actor.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class DashboardComponent implements OnInit {
 
-  actors$!: Observable<Actor[]>;
+  actors!: Actor[];
 
   constructor(private actorServics: ActorService){}
 
@@ -19,7 +18,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getActors(): void{
-    this.actors$ =  this.actorServics.getAllActors();
+    this.actorServics.getAllActors().subscribe((actors)=>(this.actors = actors.sort((a,b) => b.rating - a.rating).splice(0,6)));
   }
 
 }
