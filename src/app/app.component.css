@@ -1,3 +1,9 @@
+html,body
+{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 main
 {
   margin: 0;
@@ -12,6 +18,9 @@ main
   display: flex;
   justify-content: center;
   border-bottom: 1px solid black;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
 }
 .buttonsToAction
 {
@@ -93,4 +102,11 @@ app-actor-panel
 {
   margin-right: 50px;
   margin-top: 20px;
+}
+nav
+{
+  position: fixed;
+  position: relative;
+  z-index: 4;
+
 }
