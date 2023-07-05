@@ -16,6 +16,7 @@ import { StarComponent } from './star/star.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ActorsComponent } from './actors/actors.component';
 import { NewActorComponent } from './new-actor/new-actor.component';
+import { ActorDetailsComponent } from './actor-details/actor-details.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NewActorComponent } from './new-actor/new-actor.component';
     StarComponent,
     DashboardComponent,
     ActorsComponent,
-    NewActorComponent
+    NewActorComponent,
+    ActorDetailsComponent
   ],
   imports: [
     BrowserModule,
