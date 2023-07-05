@@ -1,5 +1,9 @@
-<h2>Najlepsi:</h2>
+<h2>Najlepsi aktorzy - TOP 6:</h2>
 
 <ng-container *ngFor="let actor of actors">
-    <app-actor-panel [actor]="actor"></app-actor-panel>
+  <app-actor-panel [actor]="actor"></app-actor-panel>
 </ng-container>
+
+<div class="searchComp">
+  <app-search-panel></app-search-panel>
+</div>
