@@ -1,3 +1,34 @@
-img{
-    max-width: 20rem;
+#detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 1em;
+    margin: 2em;
+    box-shadow: 0 1px 5px var(--font-color-dark);
+  }
+
+button {
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--font-color-dark);
+
+  margin: 0.2em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border-bottom: 1px solid var(--font-color-dark);
+
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background-color: var(--dark-background);
+  color: var(--font-color-light);
+  border-bottom: 1px solid var(--font-color-light);
+  text-decoration: underline;
 }

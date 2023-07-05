@@ -1,8 +1,12 @@
-<div *ngIf="actor">
-  <h2>{{ actor.name | uppercase }} informacje</h2>
+<div *ngIf="actor" id="detailsWrapper">
+  <h2>{{ actor.name | uppercase }}</h2>
 
-    <img [src]="actor.imgUrl" alt="{{ actor.name }} image">
+  <img [src]="actor.imgUrl" alt="{{ actor.name }} image" />
 
-  <button type="button" (click)="goBack()">Go back</button>
-  <button type="button" (click)="save()">Save</button>
+  <app-star-panel [rating]="actor.rating"></app-star-panel>
+
+  <div>
+    <button type="button" (click)="goBack()">Powrót</button>
+    <button type="button" (click)="save()">Zapisz</button>
+  </div>
 </div>

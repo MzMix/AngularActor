@@ -16,6 +16,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ActorsComponent } from './actors/actors.component';
 import { NewActorComponent } from './new-actor/new-actor.component';
 import { ActorDetailsComponent } from './actor-details/actor-details.component';
+import { StarPanelComponent } from './star-panel/star-panel.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ActorDetailsComponent } from './actor-details/actor-details.component';
     DashboardComponent,
     ActorsComponent,
     NewActorComponent,
-    ActorDetailsComponent
+    ActorDetailsComponent,
+    StarPanelComponent
   ],
   imports: [
     BrowserModule,
