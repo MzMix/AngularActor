@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MovieDetails } from 'src/interfaces/movieDetails.interface';
 import { MessageService } from './message.service';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -20,8 +21,7 @@ export class KnownForService {
       method: 'GET',
       headers: {
         accept: 'application/json',
-        Authorization:
-          'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZjM0NTk2NTY5MzUyNWQwZWEyNmRiMGFiMTFhMmE2NyIsInN1YiI6IjY0YTY3ZDZlYzNiZmZlMDEyNWMyMGIxOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.h32zjAIiyJsKJm0wuXbuYFChzTWWrCkZhP1FcNAjQxg',
+        Authorization: environment.apiURL,
       },
     };
 
