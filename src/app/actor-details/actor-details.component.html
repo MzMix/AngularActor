@@ -5,6 +5,19 @@
 
   <app-star-panel [rating]="actor.rating"></app-star-panel>
 
+  <button (click)="showKnownFor()">Zobacz filmy</button>
+
+  <div *ngIf="knownFor" id="movieDetails">
+
+    <h2>Wybrane filmy:</h2>
+
+    <ng-container  *ngFor="let kf of knownFor">
+      <app-movie-overview [movieDetails]="kf"></app-movie-overview>
+    </ng-container >
+
+    <p>Dane wczytane z <a href="themoviedb.org">themoviedb.org</a></p>
+  </div>
+
   <div id="inputWrapper">
     <label for="new-actor-name">Imię i nazwisko</label>
     <input for="new-actor-name" [(ngModel)]="actor.name" />

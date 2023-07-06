@@ -17,6 +17,7 @@ import { ActorsComponent } from './actors/actors.component';
 import { NewActorComponent } from './new-actor/new-actor.component';
 import { ActorDetailsComponent } from './actor-details/actor-details.component';
 import { StarPanelComponent } from './star-panel/star-panel.component';
+import { MovieOverviewComponent } from './movie-overview/movie-overview.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { StarPanelComponent } from './star-panel/star-panel.component';
     ActorsComponent,
     NewActorComponent,
     ActorDetailsComponent,
-    StarPanelComponent
+    StarPanelComponent,
+    MovieOverviewComponent
   ],
   imports: [
     BrowserModule,
