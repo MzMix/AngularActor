@@ -3,6 +3,8 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Actor } from 'src/interfaces/actor.interface';
 import { ActorService } from '../services/actor.service';
+import { MovieDetails } from 'src/interfaces/movieDetails.interface';
+import { KnownForService } from '../services/movie-details.service';
 
 @Component({
   selector: 'app-actor-details',
@@ -12,8 +14,11 @@ import { ActorService } from '../services/actor.service';
 export class ActorDetailsComponent implements OnInit {
   @Input() actor?: Actor;
 
+  knownFor?: MovieDetails[] | void;
+
   constructor(
     private actorService: ActorService,
+    private knownForService: KnownForService,
     private location: Location,
     private route: ActivatedRoute
   ) {}
@@ -24,6 +29,10 @@ export class ActorDetailsComponent implements OnInit {
     this.actorService
       .getActorById(id)
       .subscribe((actor) => (this.actor = actor));
+  }
+
+  async showKnownFor() {
+    this.knownFor = await this.knownForService.search(`${this.actor?.name}`);
   }
 
   goBack(): void {
