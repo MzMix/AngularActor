@@ -81,8 +81,41 @@ export class ActorService {
     );
   }
 
+  checkForInvalidCharacters(term: string): boolean {
+    const invalidChars = [
+      '\\',
+      '#',
+      '.',
+      '@',
+      '$',
+      '%',
+      '^',
+      '&',
+      '*',
+      '(',
+      ')',
+      '+',
+      '?',
+      '[',
+      ']',
+      '|',
+    ];
+    let result = false;
+
+    invalidChars.forEach((c) => {
+      result = result || term.includes(c);
+    });
+
+    return result;
+  }
+
   searchActors(term: string): Observable<Actor[]> {
-    if (!term.trim()) return of([]);
+    term = term.trim();
+    if (!term) return of([]);
+    if (this.checkForInvalidCharacters(term)) {
+      this.log(`invalid input ${term}`);
+      return of([]);
+    }
 
     return this.http.get<Actor[]>(`${this.baseUrl}/?name=${term}`).pipe(
       tap((x) =>
@@ -93,5 +126,4 @@ export class ActorService {
       catchError(this.handleError<Actor[]>('searchActors', []))
     );
   }
-
 }

@@ -16,4 +16,6 @@ body {
   --background-panel: #fbfcfe;
 
   background-color: var(--light-background);
+
+  overflow-x: hidden;
 }
